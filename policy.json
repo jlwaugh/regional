@@ -1306,5 +1306,5 @@
    "proposal_bond":"100000000000000000000000",
    "proposal_period":"604800000000000",
    "bounty_bond":"100000000000000000000000",
-   "bounty_forgiveness_period":"888888888888888"
+   "bounty_forgiveness_period":"604800000000000"
 }
