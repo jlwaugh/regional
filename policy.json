@@ -14,7 +14,7 @@
          "name":"council",
          "kind":{
             "Group":[
-               "rc-dao.near"
+               "agency.near"
             ]
          },
          "permissions":[
