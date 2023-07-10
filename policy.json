@@ -11,60 +11,64 @@
          }
       },
       {
-         "name":"bot",
+         "name":"council",
          "kind":{
             "Group":[
-               "dao-bot.keypom.near"
+               "rc-dao.near"
             ]
          },
          "permissions":[
-            "add_member_to_role:AddProposal",
+            "vote:AddProposal",
+            "call:VoteReject",
+            "policy:VoteApprove",
             "*:Finalize",
-            "add_member_to_role:VoteRemove",
+            "upgrade_self:VoteApprove",
+            "config:AddProposal",
+            "bounty_done:VoteReject",
+            "upgrade_self:VoteRemove",
+            "transfer:VoteReject",
+            "remove_member_from_role:VoteReject",
+            "add_member_to_role:VoteApprove",
+            "config:VoteReject",
+            "upgrade_remote:VoteRemove",
+            "call:VoteRemove",
+            "remove_member_from_role:AddProposal",
+            "remove_member_from_role:VoteRemove",
+            "add_bounty:VoteReject",
+            "set_vote_token:VoteRemove",
+            "upgrade_self:AddProposal",
+            "upgrade_self:VoteReject",
+            "transfer:VoteRemove",
             "add_member_to_role:VoteReject",
-            "add_member_to_role:VoteApprove"
+            "bounty_done:VoteApprove",
+            "upgrade_remote:VoteReject",
+            "bounty_done:VoteRemove",
+            "vote:VoteApprove",
+            "remove_member_from_role:VoteApprove",
+            "add_bounty:VoteApprove",
+            "call:VoteApprove",
+            "policy:VoteReject",
+            "policy:AddProposal",
+            "vote:VoteReject",
+            "transfer:VoteApprove",
+            "upgrade_remote:AddProposal",
+            "config:VoteApprove",
+            "add_bounty:VoteRemove",
+            "add_member_to_role:AddProposal",
+            "set_vote_token:AddProposal",
+            "vote:VoteRemove",
+            "add_bounty:AddProposal",
+            "bounty_done:AddProposal",
+            "call:AddProposal",
+            "set_vote_token:VoteReject",
+            "upgrade_remote:VoteApprove",
+            "set_vote_token:VoteApprove",
+            "transfer:AddProposal",
+            "add_member_to_role:VoteRemove",
+            "config:VoteRemove",
+            "policy:VoteRemove"
          ],
          "vote_policy":{
-            "remove_member_from_role":{
-               "weight_kind":"RoleWeight",
-               "quorum":"0",
-               "threshold":[
-                  1,
-                  2
-               ]
-            },
-            "upgrade_remote":{
-               "weight_kind":"RoleWeight",
-               "quorum":"0",
-               "threshold":[
-                  1,
-                  2
-               ]
-            },
-            "set_vote_token":{
-               "weight_kind":"RoleWeight",
-               "quorum":"0",
-               "threshold":[
-                  1,
-                  2
-               ]
-            },
-            "vote":{
-               "weight_kind":"RoleWeight",
-               "quorum":"0",
-               "threshold":[
-                  1,
-                  2
-               ]
-            },
-            "bounty_done":{
-               "weight_kind":"RoleWeight",
-               "quorum":"0",
-               "threshold":[
-                  1,
-                  2
-               ]
-            },
             "transfer":{
                "weight_kind":"RoleWeight",
                "quorum":"0",
@@ -81,7 +85,23 @@
                   2
                ]
             },
-            "call":{
+            "remove_member_from_role":{
+               "weight_kind":"RoleWeight",
+               "quorum":"0",
+               "threshold":[
+                  1,
+                  2
+               ]
+            },
+            "set_vote_token":{
+               "weight_kind":"RoleWeight",
+               "quorum":"0",
+               "threshold":[
+                  1,
+                  2
+               ]
+            },
+            "bounty_done":{
                "weight_kind":"RoleWeight",
                "quorum":"0",
                "threshold":[
@@ -105,7 +125,7 @@
                   2
                ]
             },
-            "add_bounty":{
+            "call":{
                "weight_kind":"RoleWeight",
                "quorum":"0",
                "threshold":[
@@ -114,6 +134,191 @@
                ]
             },
             "config":{
+               "weight_kind":"RoleWeight",
+               "quorum":"0",
+               "threshold":[
+                  1,
+                  2
+               ]
+            },
+            "upgrade_remote":{
+               "weight_kind":"RoleWeight",
+               "quorum":"0",
+               "threshold":[
+                  1,
+                  2
+               ]
+            },
+            "vote":{
+               "weight_kind":"RoleWeight",
+               "quorum":"0",
+               "threshold":[
+                  1,
+                  2
+               ]
+            },
+            "add_bounty":{
+               "weight_kind":"RoleWeight",
+               "quorum":"0",
+               "threshold":[
+                  1,
+                  2
+               ]
+            }
+         }
+      },
+      {
+         "name":"admin",
+         "kind":{
+            "Group":[
+               "inspiratibiz.near",
+               "james.near",
+               "igboze_builder.near",
+               "yuensid.near",
+               "abbakaka.near"
+            ]
+         },
+         "permissions":[
+            "remove_member_from_role:VoteRemove",
+            "set_vote_token:VoteApprove",
+            "add_member_to_role:VoteRemove",
+            "call:VoteApprove",
+            "set_vote_token:AddProposal",
+            "add_member_to_role:VoteApprove",
+            "policy:VoteReject",
+            "transfer:AddProposal",
+            "set_vote_token:VoteReject",
+            "transfer:VoteApprove",
+            "remove_member_from_role:VoteApprove",
+            "bounty_done:VoteApprove",
+            "config:VoteReject",
+            "policy:VoteApprove",
+            "remove_member_from_role:VoteReject",
+            "upgrade_remote:AddProposal",
+            "vote:VoteApprove",
+            "vote:VoteReject",
+            "add_member_to_role:AddProposal",
+            "call:AddProposal",
+            "upgrade_remote:VoteReject",
+            "remove_member_from_role:AddProposal",
+            "add_bounty:AddProposal",
+            "bounty_done:VoteReject",
+            "upgrade_remote:VoteApprove",
+            "upgrade_self:VoteApprove",
+            "set_vote_token:VoteRemove",
+            "config:VoteApprove",
+            "call:VoteRemove",
+            "upgrade_remote:VoteRemove",
+            "upgrade_self:AddProposal",
+            "vote:AddProposal",
+            "add_member_to_role:VoteReject",
+            "policy:VoteRemove",
+            "call:VoteReject",
+            "config:AddProposal",
+            "bounty_done:AddProposal",
+            "upgrade_self:VoteReject",
+            "transfer:VoteReject",
+            "add_bounty:VoteReject",
+            "config:VoteRemove",
+            "vote:VoteRemove",
+            "*:Finalize",
+            "add_bounty:VoteRemove",
+            "bounty_done:VoteRemove",
+            "policy:AddProposal",
+            "add_bounty:VoteApprove",
+            "transfer:VoteRemove",
+            "upgrade_self:VoteRemove"
+         ],
+         "vote_policy":{
+            "add_member_to_role":{
+               "weight_kind":"RoleWeight",
+               "quorum":"0",
+               "threshold":[
+                  1,
+                  2
+               ]
+            },
+            "remove_member_from_role":{
+               "weight_kind":"RoleWeight",
+               "quorum":"0",
+               "threshold":[
+                  1,
+                  2
+               ]
+            },
+            "set_vote_token":{
+               "weight_kind":"RoleWeight",
+               "quorum":"0",
+               "threshold":[
+                  1,
+                  2
+               ]
+            },
+            "call":{
+               "weight_kind":"RoleWeight",
+               "quorum":"0",
+               "threshold":[
+                  1,
+                  2
+               ]
+            },
+            "transfer":{
+               "weight_kind":"RoleWeight",
+               "quorum":"0",
+               "threshold":[
+                  1,
+                  2
+               ]
+            },
+            "upgrade_remote":{
+               "weight_kind":"RoleWeight",
+               "quorum":"0",
+               "threshold":[
+                  1,
+                  2
+               ]
+            },
+            "vote":{
+               "weight_kind":"RoleWeight",
+               "quorum":"0",
+               "threshold":[
+                  1,
+                  2
+               ]
+            },
+            "upgrade_self":{
+               "weight_kind":"RoleWeight",
+               "quorum":"0",
+               "threshold":[
+                  1,
+                  2
+               ]
+            },
+            "config":{
+               "weight_kind":"RoleWeight",
+               "quorum":"0",
+               "threshold":[
+                  1,
+                  2
+               ]
+            },
+            "add_bounty":{
+               "weight_kind":"RoleWeight",
+               "quorum":"0",
+               "threshold":[
+                  1,
+                  2
+               ]
+            },
+            "policy":{
+               "weight_kind":"RoleWeight",
+               "quorum":"0",
+               "threshold":[
+                  1,
+                  2
+               ]
+            },
+            "bounty_done":{
                "weight_kind":"RoleWeight",
                "quorum":"0",
                "threshold":[
@@ -977,64 +1182,60 @@
          }
       },
       {
-         "name":"council",
+         "name":"bot",
          "kind":{
             "Group":[
-               "rc-dao.near"
+               "dao-bot.keypom.near"
             ]
          },
          "permissions":[
-            "vote:AddProposal",
-            "call:VoteReject",
-            "policy:VoteApprove",
-            "*:Finalize",
-            "upgrade_self:VoteApprove",
-            "config:AddProposal",
-            "bounty_done:VoteReject",
-            "upgrade_self:VoteRemove",
-            "transfer:VoteReject",
-            "remove_member_from_role:VoteReject",
-            "add_member_to_role:VoteApprove",
-            "config:VoteReject",
-            "upgrade_remote:VoteRemove",
-            "call:VoteRemove",
-            "remove_member_from_role:AddProposal",
-            "remove_member_from_role:VoteRemove",
-            "add_bounty:VoteReject",
-            "set_vote_token:VoteRemove",
-            "upgrade_self:AddProposal",
-            "upgrade_self:VoteReject",
-            "transfer:VoteRemove",
-            "add_member_to_role:VoteReject",
-            "bounty_done:VoteApprove",
-            "upgrade_remote:VoteReject",
-            "bounty_done:VoteRemove",
-            "vote:VoteApprove",
-            "remove_member_from_role:VoteApprove",
-            "add_bounty:VoteApprove",
-            "call:VoteApprove",
-            "policy:VoteReject",
-            "policy:AddProposal",
-            "vote:VoteReject",
-            "transfer:VoteApprove",
-            "upgrade_remote:AddProposal",
-            "config:VoteApprove",
-            "add_bounty:VoteRemove",
             "add_member_to_role:AddProposal",
-            "set_vote_token:AddProposal",
-            "vote:VoteRemove",
-            "add_bounty:AddProposal",
-            "bounty_done:AddProposal",
-            "call:AddProposal",
-            "set_vote_token:VoteReject",
-            "upgrade_remote:VoteApprove",
-            "set_vote_token:VoteApprove",
-            "transfer:AddProposal",
+            "*:Finalize",
             "add_member_to_role:VoteRemove",
-            "config:VoteRemove",
-            "policy:VoteRemove"
+            "add_member_to_role:VoteReject",
+            "add_member_to_role:VoteApprove"
          ],
          "vote_policy":{
+            "remove_member_from_role":{
+               "weight_kind":"RoleWeight",
+               "quorum":"0",
+               "threshold":[
+                  1,
+                  2
+               ]
+            },
+            "upgrade_remote":{
+               "weight_kind":"RoleWeight",
+               "quorum":"0",
+               "threshold":[
+                  1,
+                  2
+               ]
+            },
+            "set_vote_token":{
+               "weight_kind":"RoleWeight",
+               "quorum":"0",
+               "threshold":[
+                  1,
+                  2
+               ]
+            },
+            "vote":{
+               "weight_kind":"RoleWeight",
+               "quorum":"0",
+               "threshold":[
+                  1,
+                  2
+               ]
+            },
+            "bounty_done":{
+               "weight_kind":"RoleWeight",
+               "quorum":"0",
+               "threshold":[
+                  1,
+                  2
+               ]
+            },
             "transfer":{
                "weight_kind":"RoleWeight",
                "quorum":"0",
@@ -1051,23 +1252,7 @@
                   2
                ]
             },
-            "remove_member_from_role":{
-               "weight_kind":"RoleWeight",
-               "quorum":"0",
-               "threshold":[
-                  1,
-                  2
-               ]
-            },
-            "set_vote_token":{
-               "weight_kind":"RoleWeight",
-               "quorum":"0",
-               "threshold":[
-                  1,
-                  2
-               ]
-            },
-            "bounty_done":{
+            "call":{
                "weight_kind":"RoleWeight",
                "quorum":"0",
                "threshold":[
@@ -1091,183 +1276,6 @@
                   2
                ]
             },
-            "call":{
-               "weight_kind":"RoleWeight",
-               "quorum":"0",
-               "threshold":[
-                  1,
-                  2
-               ]
-            },
-            "config":{
-               "weight_kind":"RoleWeight",
-               "quorum":"0",
-               "threshold":[
-                  1,
-                  2
-               ]
-            },
-            "upgrade_remote":{
-               "weight_kind":"RoleWeight",
-               "quorum":"0",
-               "threshold":[
-                  1,
-                  2
-               ]
-            },
-            "vote":{
-               "weight_kind":"RoleWeight",
-               "quorum":"0",
-               "threshold":[
-                  1,
-                  2
-               ]
-            },
-            "add_bounty":{
-               "weight_kind":"RoleWeight",
-               "quorum":"0",
-               "threshold":[
-                  1,
-                  2
-               ]
-            }
-         }
-      },
-      {
-         "name":"admin",
-         "kind":{
-            "Group":[
-               "inspiratibiz.near",
-               "james.near",
-               "igboze_builder.near",
-               "yuensid.near",
-               "abbakaka.near"
-            ]
-         },
-         "permissions":[
-            "remove_member_from_role:VoteRemove",
-            "set_vote_token:VoteApprove",
-            "add_member_to_role:VoteRemove",
-            "call:VoteApprove",
-            "set_vote_token:AddProposal",
-            "add_member_to_role:VoteApprove",
-            "policy:VoteReject",
-            "transfer:AddProposal",
-            "set_vote_token:VoteReject",
-            "transfer:VoteApprove",
-            "remove_member_from_role:VoteApprove",
-            "bounty_done:VoteApprove",
-            "config:VoteReject",
-            "policy:VoteApprove",
-            "remove_member_from_role:VoteReject",
-            "upgrade_remote:AddProposal",
-            "vote:VoteApprove",
-            "vote:VoteReject",
-            "add_member_to_role:AddProposal",
-            "call:AddProposal",
-            "upgrade_remote:VoteReject",
-            "remove_member_from_role:AddProposal",
-            "add_bounty:AddProposal",
-            "bounty_done:VoteReject",
-            "upgrade_remote:VoteApprove",
-            "upgrade_self:VoteApprove",
-            "set_vote_token:VoteRemove",
-            "config:VoteApprove",
-            "call:VoteRemove",
-            "upgrade_remote:VoteRemove",
-            "upgrade_self:AddProposal",
-            "vote:AddProposal",
-            "add_member_to_role:VoteReject",
-            "policy:VoteRemove",
-            "call:VoteReject",
-            "config:AddProposal",
-            "bounty_done:AddProposal",
-            "upgrade_self:VoteReject",
-            "transfer:VoteReject",
-            "add_bounty:VoteReject",
-            "config:VoteRemove",
-            "vote:VoteRemove",
-            "*:Finalize",
-            "add_bounty:VoteRemove",
-            "bounty_done:VoteRemove",
-            "policy:AddProposal",
-            "add_bounty:VoteApprove",
-            "transfer:VoteRemove",
-            "upgrade_self:VoteRemove"
-         ],
-         "vote_policy":{
-            "add_member_to_role":{
-               "weight_kind":"RoleWeight",
-               "quorum":"0",
-               "threshold":[
-                  1,
-                  2
-               ]
-            },
-            "remove_member_from_role":{
-               "weight_kind":"RoleWeight",
-               "quorum":"0",
-               "threshold":[
-                  1,
-                  2
-               ]
-            },
-            "set_vote_token":{
-               "weight_kind":"RoleWeight",
-               "quorum":"0",
-               "threshold":[
-                  1,
-                  2
-               ]
-            },
-            "call":{
-               "weight_kind":"RoleWeight",
-               "quorum":"0",
-               "threshold":[
-                  1,
-                  2
-               ]
-            },
-            "transfer":{
-               "weight_kind":"RoleWeight",
-               "quorum":"0",
-               "threshold":[
-                  1,
-                  2
-               ]
-            },
-            "upgrade_remote":{
-               "weight_kind":"RoleWeight",
-               "quorum":"0",
-               "threshold":[
-                  1,
-                  2
-               ]
-            },
-            "vote":{
-               "weight_kind":"RoleWeight",
-               "quorum":"0",
-               "threshold":[
-                  1,
-                  2
-               ]
-            },
-            "upgrade_self":{
-               "weight_kind":"RoleWeight",
-               "quorum":"0",
-               "threshold":[
-                  1,
-                  2
-               ]
-            },
-            "config":{
-               "weight_kind":"RoleWeight",
-               "quorum":"0",
-               "threshold":[
-                  1,
-                  2
-               ]
-            },
             "add_bounty":{
                "weight_kind":"RoleWeight",
                "quorum":"0",
@@ -1276,15 +1284,7 @@
                   2
                ]
             },
-            "policy":{
-               "weight_kind":"RoleWeight",
-               "quorum":"0",
-               "threshold":[
-                  1,
-                  2
-               ]
-            },
-            "bounty_done":{
+            "config":{
                "weight_kind":"RoleWeight",
                "quorum":"0",
                "threshold":[
