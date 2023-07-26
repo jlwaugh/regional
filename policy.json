@@ -14,7 +14,7 @@
          "name":"council",
          "kind":{
             "Group":[
-               "sirs.near", "nneoma.near", "izcc.near"
+               "fritzwagner.near", "frado.near", "vianftbrasil.near"
             ]
          },
          "permissions":[
@@ -171,7 +171,7 @@
          "name":"admin",
          "kind":{
             "Group":[
-               "multi.near"
+               "rc-dao.near"
             ]
          },
          "permissions":[
@@ -328,7 +328,7 @@
          "name":"contributor",
          "kind":{
             "Group":[
-               "james.near"
+               "multi.near"
             ]
          },
          "permissions":[
