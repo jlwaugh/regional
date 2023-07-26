@@ -74,7 +74,7 @@
                "quorum":"0",
                "threshold":[
                   1,
-                  2
+                  1
                ]
             },
             "upgrade_self":{
@@ -82,7 +82,7 @@
                "quorum":"0",
                "threshold":[
                   1,
-                  2
+                  1
                ]
             },
             "remove_member_from_role":{
@@ -90,7 +90,7 @@
                "quorum":"0",
                "threshold":[
                   1,
-                  2
+                  1
                ]
             },
             "set_vote_token":{
@@ -98,7 +98,7 @@
                "quorum":"0",
                "threshold":[
                   1,
-                  2
+                  1
                ]
             },
             "bounty_done":{
@@ -106,7 +106,7 @@
                "quorum":"0",
                "threshold":[
                   1,
-                  2
+                  1
                ]
             },
             "policy":{
@@ -114,7 +114,7 @@
                "quorum":"0",
                "threshold":[
                   1,
-                  2
+                  1
                ]
             },
             "add_member_to_role":{
@@ -122,7 +122,7 @@
                "quorum":"0",
                "threshold":[
                   1,
-                  2
+                  1
                ]
             },
             "call":{
@@ -130,7 +130,7 @@
                "quorum":"0",
                "threshold":[
                   1,
-                  2
+                  1
                ]
             },
             "config":{
@@ -138,7 +138,7 @@
                "quorum":"0",
                "threshold":[
                   1,
-                  2
+                  1
                ]
             },
             "upgrade_remote":{
@@ -146,7 +146,7 @@
                "quorum":"0",
                "threshold":[
                   1,
-                  2
+                  1
                ]
             },
             "vote":{
@@ -154,7 +154,7 @@
                "quorum":"0",
                "threshold":[
                   1,
-                  2
+                  1
                ]
             },
             "add_bounty":{
@@ -162,7 +162,7 @@
                "quorum":"0",
                "threshold":[
                   1,
-                  2
+                  1
                ]
             }
          }
