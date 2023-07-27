@@ -14,7 +14,7 @@
          "name":"council",
          "kind":{
             "Group":[
-               "psalm.near", "mrmoh.near", "fatokunmayowa.near"
+               "alejandro.near"
             ]
          },
          "permissions":[
